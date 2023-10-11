@@ -46,7 +46,7 @@ int Vietduino_Ultrasonic::readMode_1(){
   digitalWrite(trigRX, LOW);
   
   // Read the echoPin. pulseIn() returns the duration (length of the pulse) in microseconds:
-  duration = pulseIn(echoTX, HIGH,36000);
+  duration = pulseIn(echoTX, HIGH);
   
   // Calculate the distance:
   distance = duration*0.034/2;
